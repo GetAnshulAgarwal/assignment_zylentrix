@@ -1,16 +1,59 @@
-# assignment_zylentrix
+# API Fetching Flutter Application
 
-A new Flutter project.
+A beautiful Flutter application that demonstrates fetching data from a public API and displaying it in a modern UI with proper loading indicators and error handling.
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a1560af8-dd70-4ea2-bad4-5fca2a9358d1" width="300">
+  <img src="https://github.com/user-attachments/assets/6bf2e57f-c318-4e7c-bcef-1a59ea5ec276" width="300">
+</p>
 
-A few resources to get you started if this is your first Flutter project:
+## Project Setup Instructions
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. **Clone the repository**
+   ```
+   git clone <repository-url>
+   ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. **Navigate to the project directory**
+   ```
+   cd assignment_zylentrix
+   ```
+
+3. **Install dependencies**
+   ```
+   flutter pub get
+   ```
+
+4. **Run the application**
+   ```
+   flutter run
+   ```
+
+## Project Structure
+
+```
+lib/
+  ├── main.dart                  
+  ├── models/
+  │   └── post.dart              # Post data model
+  ├── screens/
+  │   ├── home_screen.dart       # Main screen showing the posts
+  │   └── post_detail_screen.dart # Detailed view of a single post
+  ├── services/
+  │   └── api_service.dart       # API service to fetch data
+  └── widgets/
+      ├── post_list.dart         # Widget to display the list of posts
+      ├── post_item.dart         # Widget for individual post item
+      └── error_display.dart     # Widget to display error messages
+```
+
+## Assumptions or additional enhancements that can be made 
+
+- Add search functionality
+- Implement filtering and sorting options
+- Add pagination for large datasets
+- Implement caching for offline support
+- Add animations for list items
+- Create a dark mode theme
